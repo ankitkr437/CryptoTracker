@@ -1,0 +1,52 @@
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+}
+.chart-title{
+    font-size: 25px;
+    font-weight: 600;
+    width: 40%;
+}
+.coin-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.coin-desc p{
+    font-size: 17px;
+    margin-left: 4vw;
+}
+.linechart-container{
+    height: 56vh;
+    width: 100%;
+}
+@media (max-width:600px) {
+    .chart-header{
+        margin-top: 4vh;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .chart-title{
+        font-size: 20px;
+        text-align:center;
+        width: 100%;
+    }
+    .coin-desc{
+        width: 100%;
+        margin-top: 2vh;
+    }
+    .coin-desc p{
+        font-size: 14px;
+        text-align:center;
+        width: 100%;
+        margin: 0;
+    }
+    .linechart-container{
+        width: 92vw;
+    }
+    
+}

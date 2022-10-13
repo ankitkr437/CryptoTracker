@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+.homepage{
+    padding-top: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.crypto-status-title{
+    font-size: 35px;
+    font-weight: 600;
+    color: #1E2329;
+    margin-top: 0;
+    padding-top:0 ;
+    margin-bottom: 2vh;
+}
+.cryptoStatus{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 18vh;
+    background-color: rgb(222, 227, 230);
+}
+.statushalf{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.status-no{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1E2329;
+}
+.status-title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.latest-title{
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1E2329;
+}
+.show-more{
+    font-size: 20px;
+    font-weight: 600;
+    /* padding-right: 1vw; */
+}
+.show{
+    margin-right: 1vw;
+}
+.show a:hover{
+     color: blue;
+     text-decoration: underline;
+}
+.show a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forward-img{
+    margin-left: 1px;
+    width: 6vh;
+    height: 6vh;
+}
+
+@media (max-width:600px) {
+    .cryptoStatus{
+         flex-direction: column;
+         height: 16vh;
+    }
+    .status-no{
+    font-size: 20px;
+    line-height: 32px;
+    }
+    .status-title{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .statushalf{
+        margin-bottom: 2vh;
+    }
+    .crypto-status-title{
+        font-size: 25px;
+    }
+    .popular-title{
+    font-size: 24px;
+    line-height: 32px;
+    }
+    .show-more{
+        font-size: 13px;
+    }
+    .forward-img{
+        margin-left: 1px;
+        width: 3vh;
+        height: 3vh;
+    }
+}

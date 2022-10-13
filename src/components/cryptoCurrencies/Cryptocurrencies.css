@@ -1,0 +1,41 @@
+ .searchbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10vw;
+ }
+ .search-crypto input{
+    font-size: 24px;
+    width: 40vw;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 1vw;
+ }
+ .search-crypto input:focus{
+    outline: none;
+}
+.popular-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1E2329;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+@media (max-width:600px) {
+    .searchbox{
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .popular-title{
+        margin-top: 3vh;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 1vh;
+    }
+    .search-crypto input{
+        font-size: 18px;
+        width: 68vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+     }
+}
