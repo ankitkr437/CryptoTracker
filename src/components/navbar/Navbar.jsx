@@ -11,7 +11,7 @@ const Navbar = () => {
     
     <div className="nav-title">
       <Link to='/' >
-      <img  src='/images/cryptologo.png' className="Cryptologo" ></img>
+      <img  src='/images/cryptologo.png' className="Cryptologo" alt='Cryptologo'></img>
         Cryptoworld
        </Link>
       </div>
@@ -26,15 +26,15 @@ const Navbar = () => {
     
     <div className="nav-links">
       <Link to="/">
-        <img  src='/images/home.png' className="nav-links-img" ></img>
+        <img  src='/images/home.png' className="nav-links-img" alt=''></img>
         Home
         </Link>
       <Link to="/cryptocurrencies">
-      <img  src='/images/cryptocurrency.png' className="nav-links-img" ></img>
+      <img  src='/images/cryptocurrency.png' className="nav-links-img" alt=''></img>
         Cryptocurrencies
         </Link>
       <Link to="/news">
-      <img  src='/images/news.png' className="nav-links-img" ></img>
+      <img  src='/images/news.png' className="nav-links-img" alt=''></img>
         News
       </Link>
     </div>

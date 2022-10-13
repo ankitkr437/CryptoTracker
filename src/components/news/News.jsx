@@ -3,7 +3,9 @@ import moment from "moment";
 import './News.css';
 import { useGetCryptosQuery } from "../../services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../../services/cryptoNewsApi";
-import { Link } from "react-router-dom";
+import {
+  LinearProgress
+} from "@material-ui/core"; 
 
 const demoImage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
@@ -16,7 +18,7 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
-  if (!cryptoNews?.value) return "Loading...";
+  if (!cryptoNews?.value) return <LinearProgress />;
   console.log(cryptoNews);
   return (
     <>
@@ -29,7 +31,7 @@ const News = ({ simplified }) => {
                  <p className="card-title"> {news.name.length >100 ? `${news.name.substring(0, 100)}...` : news.name}</p>
                  <p className="card-news">{news.description.length > 180 ? `${news.description.substring(0, 180)}...` : news.description}</p>
               </div>
-              <img className="card-img" src={news?.image?.thumbnail?.contentUrl || demoImage}/>
+              <img className="card-img" src={news?.image?.thumbnail?.contentUrl || demoImage} alt=''/>
               </div>
               <div className="card-footer">
                 <div className="news-origin">

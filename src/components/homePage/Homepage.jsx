@@ -3,6 +3,10 @@ import millify from "millify";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import { useGetCryptosQuery } from "../../services/cryptoApi.js";
+import {
+  LinearProgress
+} from "@material-ui/core"; 
+
 import Cryptocurrencies from '../cryptoCurrencies/Cryptocurrencies.jsx';
 import News from '../news/News.jsx'
 
@@ -11,7 +15,7 @@ const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <LinearProgress />;
   return (
     <div className="homepage">
 
@@ -57,7 +61,7 @@ const Homepage = () => {
         <div className="show">
         <Link to="/news">
         <p className="show-more">Show more</p>
-        <img src='/images/forward.png' className="forward-img"></img>
+        <img src='/images/forward.png' className="forward-img" alt=""></img>
         </Link>
         </div>
         
