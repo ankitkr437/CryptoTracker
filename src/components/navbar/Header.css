@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    font-family: BinancePlex,Arial,sans-serif!important;
+}
+ 
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(57, 109, 205);
+    color: white;
+}
+.Cryptologo{
+    height: 35px;
+    width: 35px;
+    margin-right: 1vw;
+}
+.logo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+.nav-links-img{
+    height: 24px;
+    width: 24px;
+    margin-right: 0.4vw;
+}
+.menu-item{
+   display: flex;
+   justify-content: center;
+   align-tracks: center;
+}
+.home,.about,.skills,.contact,.signup{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.mobile-menu-icon{
+    display: none;
+}
+
+@media (max-width:700px) {
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: rgb(47, 87, 161);
+        top: 0;
+        /* left: 75px; */
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,.about,.skills,.contact,.signup{
+        color: white;
+        text-align: center;
+
+        font-size: 20px;
+        padding: 32px;
+         width: 100%;
+         transition: all 0.5s ease;
+    }
+    .mobile-menu-icon{
+       display: block;
+       position: absolute;
+       font-size: 30px;
+       color: white;
+       background-color: rgb(46, 118, 184);
+       border: none;
+       outline: none;
+       top: 15px;
+       right: 25px;
+    }
+    
+}

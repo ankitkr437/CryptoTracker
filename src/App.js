@@ -1,7 +1,7 @@
 import React from "react";
 import { Route,Routes,Navigate} from "react-router-dom";
- import './App.css'
-
+import './App.css'
+import Header from "./components/navbar/Header";
 import Homepage from "./components/homePage/Homepage.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Exchanges from './components/exchanges/Exchanges.jsx';
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="navbar">
-        <Navbar />
+        <Header />
       </div>
       <div className="main">
 

@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     text-decoration: none;
   }
@@ -74,13 +74,13 @@
       margin-left: -2vw;
     }
     .Cryptologo{
-      height: 25px;
-      width: 25px;
-      margin-right: 5px;
-      margin-bottom: -4px;
+      height: 40px;
+      width: 40px;
+      margin-right:11px;
+      margin-bottom: -9px;
     }
     .nav-title a{
-      font-size: 20px;
+      font-size: 30px;
     }
     .nav > .nav-btn {
       display: inline-block;
@@ -125,4 +125,5 @@
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
-  }
+    
+} */
