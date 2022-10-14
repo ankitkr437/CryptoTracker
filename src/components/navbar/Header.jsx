@@ -7,6 +7,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="navbar">
+        
       <h3 className="logo">
         <img
           src="/images/cryptologo.png"
