@@ -11,12 +11,9 @@ const demoImage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
 
 const News = ({ simplified }) => {
-  const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
+  const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
   const { data } = useGetCryptosQuery(100);
-  const { data: cryptoNews } = useGetCryptoNewsQuery({
-    newsCategory,
-    count: simplified ? 6 : 12,
-  });
+  const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
 
   if (!cryptoNews?.value) return <LinearProgress />;
   console.log(cryptoNews);

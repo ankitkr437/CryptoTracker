@@ -116,43 +116,41 @@ const Cryptocurrencies = ({ simplified }) => {
             {cryptos
               ?.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((currency) => (
+             
                 <TableRow
                   key={currency.uuid}
                   className={classes.tablerow}
-                  // onClick={() => { navigate(`/crypto/${currency.uuid}/`); }}
+                  component={Link} to={`/crypto/${currency.uuid}`}
                 >
                   <TableCell>
                     <Typography>
-                      <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
-                        
+                     
                         {`${currency.rank}. ${currency.name}`}
                         
                         <img
                           className={classes.cryptoImage}
                           src={currency.iconUrl}
                         />
-                      </Link>
+                      
                     </Typography>
                   </TableCell>
                   <TableCell>
-                    <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
+                 
                       <Typography color="primary" variant="subtitle2">
                         ${millify(currency.price)}
                       </Typography>
-                    </Link>
+                   
                   </TableCell>
                   <TableCell>
-                    <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
+                   
                       {currency.change > 0
                         ? "+" + currency.change
                         : currency.change}
                       %
-                    </Link>
+                 
                   </TableCell>
                   <TableCell>
-                    <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
                       ${millify(currency.marketCap)}
-                    </Link>
                   </TableCell>
                 </TableRow>
               ))}

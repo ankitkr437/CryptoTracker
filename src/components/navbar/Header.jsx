@@ -7,7 +7,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="navbar">
-        
+    <Link to="/" className="home">
       <h3 className="logo">
         <img
           src="/images/cryptologo.png"
@@ -16,6 +16,7 @@ const Header = () => {
         ></img>
         Cryptoworld
       </h3>
+      </Link>
       <ul
         className={isMobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setIsMobile(false)}
