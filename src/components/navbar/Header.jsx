@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <nav className="navbar">
     <Link to="/" className="home">
-      <h3 className="logo">
+      <h4 className="logo">
         <img
-          src="/images/cryptologo.png"
+          src="/images/logo1.png"
           className="Cryptologo"
           alt="Cryptologo"
         ></img>
         Cryptoworld
-      </h3>
+      </h4>
       </Link>
       <ul
         className={isMobile ? "nav-links-mobile" : "nav-links"}

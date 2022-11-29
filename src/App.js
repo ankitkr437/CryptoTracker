@@ -8,6 +8,7 @@ import Exchanges from './components/exchanges/Exchanges.jsx';
 import Cryptocurrencies from './components/cryptoCurrencies/Cryptocurrencies.jsx';
 import CryptoDetails from './components/cryptoDetails/Cryptodetails.jsx'
 import News from './components/news/News.jsx';
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -28,8 +29,9 @@ const App = () => {
      </Routes>
 
       </div>
-      <div className="footer">
-      </div>
+      {/* <div className="footer"> */}
+        <Footer />
+      {/* </div> */}
     </div>
   );
 };

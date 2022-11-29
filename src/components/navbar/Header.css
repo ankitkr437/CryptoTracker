@@ -46,7 +46,7 @@
 .home,.about,.skills,.contact,.signup{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px;
     margin: 0 20px;
     cursor: pointer;
@@ -60,7 +60,8 @@
         display: flex;
         position: absolute;
         top: 15px;
-        left: 35px;
+        left: 10px;
+        font-size: 25px;
     }
     .nav-links{
         display: none;
@@ -69,7 +70,7 @@
         position: absolute;
         display: block;
         list-style: none;
-        background-color: rgb(41, 120, 210);
+        background-color: rgb(43, 84, 159);
         top: 0;
         /* left: 75px; */
         transition: all 0.5s ease-out;
