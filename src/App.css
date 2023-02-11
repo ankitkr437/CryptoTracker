@@ -1,6 +1,9 @@
 *{
     font-family: BinancePlex,Arial,sans-serif!important;
 }
+.main{
+    padding-top:70px;
+}
 /* .footer{
     width: 100%;
     padding-left: 2vw;
