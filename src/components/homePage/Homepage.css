@@ -86,7 +86,7 @@
 @media (max-width:600px) {
     .cryptoStatus{
          flex-direction: column;
-         height: 16vh;
+         height: 18vh;
     }
     .status-no{
     font-size: 20px;
